@@ -14,7 +14,7 @@
             <ColumnDefinition ></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Label Content="{Binding IceCream}"></Label>
+        <Label Content="{Binding IceCream, UpdateSourceTrigger=PropertyChanged}"></Label>
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition></RowDefinition>

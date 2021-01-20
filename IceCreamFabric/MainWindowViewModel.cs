@@ -19,6 +19,8 @@ namespace IceCreamFabric
             dict.Add("chocolate", new ChocolateClassicDirector());
              iceCreamFab =IceCreamFabrice.GetFabric(dict);
             Buy = new MyCommand(BuyCream);
+            BananaLendIceCream = new MyCommand(MakeBananaLend);
+            ChocolateIceCream = new MyCommand(MakeChocolate);
         }
         public MyCommand Buy { get; set; }
         public void BuyCream()
